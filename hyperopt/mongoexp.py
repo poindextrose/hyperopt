@@ -277,6 +277,7 @@ def connection_from_string(s):
             pw=pw,
             host=host,
             port=port,
+            auth_dbname=db,
             )
     return connection, tunnel, connection[db], connection[db][collection]
 
@@ -1298,4 +1299,3 @@ def main_worker():
         return -1
 
     return main_worker_helper(options, args)
-

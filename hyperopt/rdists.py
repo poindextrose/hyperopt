@@ -7,6 +7,17 @@ import numpy.random as mtrand
 import scipy.stats
 from scipy.stats import rv_continuous, rv_discrete
 
+
+class uniform_gen(scipy.stats.distributions.uniform_gen):
+    # -- included for completeness
+    pass
+
+
+class norm_gen(scipy.stats.distributions.norm_gen):
+    # -- included for completeness
+    pass
+
+
 class loguniform_gen(rv_continuous):
     """ Stats for Y = e^X where X ~ U(low, high).
 
